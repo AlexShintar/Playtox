@@ -22,7 +22,7 @@ public class Transaction implements Runnable {
         while (counter.getNumber() < numberOfTransactions) {
 
             try {
-                Thread.sleep(1 + random.nextInt(1));
+                Thread.sleep(1000 + random.nextInt(1000));
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
